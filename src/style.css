@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Ballet&family=Monoton&display=swap');
+
+html {scroll-behavior: smooth;}
+
+body {
+    background-image: url(../../images/uglybackground.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1,h2,h3 {
+    font-family: 'Ballet', cursive;
+    font-family: 'Monoton', cursive;
+}
+
+main, section {
+    scroll-margin-top: 150px
+}
+
+main {
+    margin-top: 100px;
+}
+
+nav {
+    width: 100%;
+    background-color: slategray;
+
+    position: fixed;
+        top: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(158, 232, 232);
+    text-decoration: underline;
+    border-radius: 13px;
+    color: rgb(68, 51, 51);
+}
+
+nav ul li a {
+    color: white;
+    padding: 50%;
+    background-color: rgb(75, 208, 208);
+}
+
+#about p {
+    color: rgb(247, 246, 245);
+    padding: 50%;
+    font-weight: 700;
+    font-size: xx-large;
+
+}
+
+#join .flex-container > div {
+    background-color: bisque;
+    border: 3px black;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+h1 {
+    margin-top: 150px;
+}
+
+h1,h2,h3, #contact, footer {
+    text-align: start;
+    font-size: larger;
+}
+
+p, li {
+    font-family: 'Ballet', cursive;
+    font-weight: 700;
+    font-size: x-large;
+
+    margin: 0 auto;
+}
+
+img {
+    width: 50%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    img {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+    p { width: 60% }
+}  
+
+    img {
+        width: 100%;
+        aspect-ratio: 3/3;
+        object-fit: cover;
+        box-shadow: 0px 0px 10px black;
+    }
